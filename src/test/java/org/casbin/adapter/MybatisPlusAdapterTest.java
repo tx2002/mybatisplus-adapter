@@ -13,8 +13,8 @@ import static org.junit.Assert.fail;
 public class MybatisPlusAdapterTest {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "123456";
+    private static final String USERNAME = "casbin_test";
+    private static final String PASSWORD = "TEST_casbin";
 
     static void testEnforce(Enforcer e, String sub, Object obj, String act, boolean res) {
         assertEquals(res, e.enforce(sub, obj, act));
